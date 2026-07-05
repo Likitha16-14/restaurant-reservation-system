@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "Restaurant Reservation System API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\n  \"name\": \"Test User\",\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\"\n}"},
+            "url": {"raw": "http://localhost:5000/api/auth/register", "host": ["http://localhost:5000"], "path": ["api", "auth", "register"]}
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"admin123\"\n}"},
+            "url": {"raw": "http://localhost:5000/api/auth/login", "host": ["http://localhost:5000"], "path": ["api", "auth", "login"]}
+          }
+        }
+      ]
+    }
+  ]
+}
