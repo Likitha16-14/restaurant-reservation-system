@@ -9,7 +9,7 @@
   },
 
  "scripts": {
-  "preinstall": "npx npm-force-resolutions || true",
+
   "build": "vite build"
 },
 
